@@ -1,0 +1,376 @@
+html {
+    background-image: url(whiteabstract.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+h2 {
+    color: black;
+    font-weight: 100;
+    font-size: 4rem;
+    opacity: .80;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    font-weight: 100;
+    font-size: 6em;
+    opacity: .80;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* for navbar navigation styling */
+
+nav .navbar-nav {
+    font-family: 'Quicksand', sans-serif;
+    opacity: .9;
+}
+
+nav .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Sigmar', cursive;
+    padding-left: 1rem;
+    color: #16af1e;
+    text-shadow:
+      0 0 7px #16af1e,
+      0 0 10px #16af1e,
+      0 0 21px #16af1e,
+      0 0 42px #0fa,
+      0 0 82px #0fa;
+    font-size: 2em;
+    opacity: .8;
+}
+
+.navbar-brand .tag {
+    font-family: 'Sigmar', cursive;
+}
+
+.navbar.navbar-expand-sm.navbar-dark {
+    display: flex;
+    justify-content: end;
+    border: none;
+    padding-bottom: 15rem;
+}
+
+button.navbar-toggler {
+    display: flex;
+    justify-content: end;
+    border: none;
+}
+
+.dropdown {
+    padding-left: 15px;
+    transition: transform .5s;
+}
+
+.dropdown:hover {
+    transform: translateY(-5px);
+}
+
+.dropdown-item.bg-success {
+    border-radius: 50px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    color: white;
+}
+
+.dropdown-menu.btn-transparent.bg-transparent.show {
+    border: transparent;
+}
+
+.btn.btn-transparent.dropdown-toggle {
+    color: black;
+    opacity: 90%;
+}
+
+/*signup and resume modal styling*/
+
+.modal-content.custom-modal {
+    background-color: transparent;
+    opacity: 80%;
+    box-shadow: 0 0 20px black ;
+}
+
+.custom-modal .modal-header,
+.custom-modal .modal-footer {
+    background-color: transparent;
+    border: none;
+}
+
+.custom-modal .modal-title {
+    color: black;
+}
+
+#signup_btn {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#dash {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#signup-modal-label {
+    color: black;
+}
+
+.form-group {
+    color: black;
+}
+
+.modal-content.dash-modal {
+    background-color: transparent;
+    opacity: 95%;
+    box-shadow: 0 0 20px black ;
+}
+
+.dash-modal .modal-header,
+.dash-modal .modal-body,
+.dash-modal .modal-footer {
+    background-color: transparent;
+    border: none;
+    color: black;
+
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-resume {
+    border-radius: 20px;
+}
+
+.dash-modal .modal-title {
+    color: black;
+}
+
+.btn.btn-dark.bg-transparent {
+    border-color: transparent;
+    color: black;
+    opacity: .8;
+}
+
+.btn.btn-dark.dropdown-toggle {
+    border-color: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*skill bar*/
+
+div h4.skills-heading {
+    color: black;
+    font-size: 4em;
+    opacity: .80;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, black);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.skillstwo {
+    text-align: center;
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 150px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.skills img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    opacity: .9;
+
+    transition: transform .5s;
+}
+
+.skills:hover {
+    transform: translateY(-10px);
+    text-decoration: none;
+
+}
+
+.skillstwo img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    opacity: .9;
+
+    transition: transform .5s;
+}
+
+.skillstwo img:hover {
+    transform: translateY(-10px);
+}
+
+/*for animated js text*/
+
+.animated-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    margin: 0;
+    opacity: .9;
+}
+
+#words {
+    color: greenyellow;
+    opacity: .9;
+
+}
+
+/*footer styling*/
+
+div.nav_footer {
+    margin: 0;
+    padding: 0;
+}
+
+.about-row {
+    opacity: .75;
+    padding: 150px;
+}
+
+.about-nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 100px;
+    opacity: .8;
+}
+
+.contact-style {
+    color: black;
+    list-style-type: none;
+}
+
+.about-style {
+    color: black;
+    list-style-type: none;
+}
+
+/*project columns*/
+
+div h4.projects-heading {
+    color: black;
+    font-size: 4em;
+    opacity: .80;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0rem;
+    padding-bottom: 6rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 75px;
+    margin: 500px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: black;
+    opacity: .8;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+}
+
+p img {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 2s;
+    transform: translateX(50%);
+}
+
+p span {
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(50%);
+}
+
+/*sale button*/
+
+.sale-button {
+    padding-bottom: 50px;
+}
